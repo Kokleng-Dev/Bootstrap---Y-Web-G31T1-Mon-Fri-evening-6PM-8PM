@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plants Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://plant-landing-page-tailwind-css.netlify.app/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-system">
+    <!-- nav bar  -->
+    <div class="container position-sticky top-0 z-2">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand font-title text-white" href="#"
+            ><h3>IndorePlants.</h3></a
+          >
+          <button
+            class="navbar-toggler text-white border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end font-text fw-semibold"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-warning"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Review</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- hero section -->
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="d-flex justify-content-center h-100 flex-column">
+            <h1 class="font-text text-white fw-bold lh-1">
+              <span class="text-warning">Plants</span> make a positive
+              <span class="text-warning">impact</span> on your environment
+            </h1>
+            <div class="text-white font-title my-4" style="font-size: 10px">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Distinctio fugiat eveniet, reprehenderit veritatis aut explicabo
+              voluptatum ullam itaque tenetur numquam!
+            </div>
+            <div>
+              <button
+                class="btn text-white px-3 btn-warning fw-semibold font-text btn-sm me-1 fw-semibold"
+              >
+                Shop Now <i class="fa-solid fa-seedling"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-warning px-3 font-text btn-sm fw-semibold text-white"
+              >
+                Know More <i class="fa-solid fa-seedling"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="position-relative img-hero">
+            <img
+              src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/home.png"
+              class="w-100 up-down"
+              alt=""
+            />
+            <i
+              class="zoom-in-zoom-out fa-solid fa-seedling position-absolute top-0 fs-6 text-warning"
+            ></i>
+            <i
+              class="up-down fa-solid fa-seedling position-absolute top-0 fs-5 text-warning end-0"
+            ></i>
+            <i
+              class="rotate rotate-full fa-solid fa-seedling fs-2 text-warning"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD  -->
+    <div class="bg-white position-relative z-2">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="card border rounded border-success">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 fw-semibold">
+                  <h2><i class="fa fa-truck"></i></h2>
+                  <h5 class="font-text">Fast Delivery</h5>
+                </div>
+                <div class="font-title fs-6 fw-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Velit, facere debitis omnis
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="card border rounded border-success">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 fw-semibold">
+                  <h2><i class="fa fa-truck"></i></h2>
+                  <h5 class="font-text">Fast Delivery</h5>
+                </div>
+                <div class="font-title fs-6 fw-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Velit, facere debitis omnis
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="card border rounded border-success">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 fw-semibold">
+                  <h2><i class="fa fa-truck"></i></h2>
+                  <h5 class="font-text">Fast Delivery</h5>
+                </div>
+                <div class="font-title fs-6 fw-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Velit, facere debitis omnis
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="card border rounded border-success">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-3 fw-semibold">
+                  <h2><i class="fa fa-truck"></i></h2>
+                  <h5 class="font-text">Fast Delivery</h5>
+                </div>
+                <div class="font-title fs-6 fw-lighter">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Velit, facere debitis omnis
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about us  -->
+    <div class="position-relative z-1 overflow-x-hidden">
+      <div
+        class="position-absolute"
+        style="width: 200px; top: -30px; right: -35px"
+      >
+        <img
+          class="z-3 w-100"
+          src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/leaf-3.png"
+        />
+      </div>
+      <div class="container text-white py-5">
+        <div class="d-flex align-items-center flex-column">
+          <h1 class="font-title text-warning">About Us</h1>
+          <p class="font-text">Follow instruction for more</p>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="w-75">
+              <h1 class="font-text fw-bold lh-1">
+                Make your <span class="text-warning">organic</span> garden
+              </h1>
+              <p class="font-title fw-bold" style="font-size: 12px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Blanditiis ratione rem maxime veniam cum libero voluptas tempora
+                aut saepe similique, eos corporis. Expedita culpa consequatur
+                animi deleniti ullam adipisci iure sequi dolores modi aliquam
+                laudantium, explicabo nobis quia id reprehenderit.?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 text-center">
+            <img
+              src="	https://plant-landing-page-tailwind-css.netlify.app/assets/img/plant-1.png"
+              class="w-50"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div
+            class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="w-75">
+              <h1 class="font-text fw-bold lh-1">
+                Make your <span class="text-warning">organic</span> garden
+              </h1>
+              <p class="font-title fw-bold" style="font-size: 12px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Blanditiis ratione rem maxime veniam cum libero voluptas tempora
+                aut saepe similique, eos corporis. Expedita culpa consequatur
+                animi deleniti ullam adipisci iure sequi dolores modi aliquam
+                laudantium, explicabo nobis quia id reprehenderit.?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 text-center order-lg-first">
+            <img
+              src="	https://plant-landing-page-tailwind-css.netlify.app/assets/img/plant-1.png"
+              class="w-50"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- your choice plant  -->
+    <div class="bg-system-2 position-relative z-2">
+      <div class="container py-5">
+        <div class="d-flex align-items-center flex-column mb-5">
+          <h1 class="font-title text-warning">Your Choice Plant</h1>
+          <p class="font-text text-white">Follow instruction for more</p>
+        </div>
+
+        <div class="row py-5">
+          <div class="col-lg-3 col-md-6 col-12 my-4">
+            <div class="bg-system rounded p-3 position-relative">
+              <div class="position-absolute text-center" style="top: -100px">
+                <img
+                  class="w-100"
+                  src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/cart-1.png"
+                  alt=""
+                />
+              </div>
+
+              <div style="height: 150px"></div>
+
+              <div class="px-3 text-white font-text">
+                <span class="fs-6 fw-bolder">Nephrolepis exaltata</span>
+
+                <h2>Boston Fern</h2>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                <i class="fa-regular fa-star"></i>
+
+                <div
+                  class="d-flex w-100 justify-content-between align-items-center mt-4"
+                >
+                  <div class="text-warning fw-bold fs-5">$ 20.00</div>
+                  <button class="btn btn-warning">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 my-4">
+            <div class="bg-system rounded p-3 position-relative">
+              <div class="position-absolute text-center" style="top: -100px">
+                <img
+                  class="w-100"
+                  src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/cart-1.png"
+                  alt=""
+                />
+              </div>
+
+              <div style="height: 150px"></div>
+
+              <div class="px-3 text-white font-text">
+                <span class="fs-6 fw-bolder">Nephrolepis exaltata</span>
+
+                <h2>Boston Fern</h2>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                <i class="fa-regular fa-star"></i>
+
+                <div
+                  class="d-flex w-100 justify-content-between align-items-center mt-4"
+                >
+                  <div class="text-warning fw-bold fs-5">$ 20.00</div>
+                  <button class="btn btn-warning">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 my-4">
+            <div class="bg-system rounded p-3 position-relative">
+              <div class="position-absolute text-center" style="top: -100px">
+                <img
+                  class="w-100"
+                  src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/cart-1.png"
+                  alt=""
+                />
+              </div>
+
+              <div style="height: 150px"></div>
+
+              <div class="px-3 text-white font-text">
+                <span class="fs-6 fw-bolder">Nephrolepis exaltata</span>
+
+                <h2>Boston Fern</h2>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                <i class="fa-regular fa-star"></i>
+
+                <div
+                  class="d-flex w-100 justify-content-between align-items-center mt-4"
+                >
+                  <div class="text-warning fw-bold fs-5">$ 20.00</div>
+                  <button class="btn btn-warning">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 my-4">
+            <div class="bg-system rounded p-3 position-relative">
+              <div class="position-absolute text-center" style="top: -100px">
+                <img
+                  class="w-100"
+                  src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/cart-1.png"
+                  alt=""
+                />
+              </div>
+
+              <div style="height: 150px"></div>
+
+              <div class="px-3 text-white font-text">
+                <span class="fs-6 fw-bolder">Nephrolepis exaltata</span>
+
+                <h2>Boston Fern</h2>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                <i class="fa-regular fa-star"></i>
+
+                <div
+                  class="d-flex w-100 justify-content-between align-items-center mt-4"
+                >
+                  <div class="text-warning fw-bold fs-5">$ 20.00</div>
+                  <button class="btn btn-warning">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- review card -->
+    <div class="bg-system position-relative z-1 pb-5 overflow-hidden">
+      <div
+        class="position-absolute"
+        style="width: 200px; top: -30px; left: -35px"
+      >
+        <img
+          class="z-3 w-100"
+          src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/leaf-4.png"
+        />
+      </div>
+      <div class="container py-5">
+        <div class="d-flex align-items-center flex-column mb-5">
+          <h1 class="font-title text-warning">Customer Review</h1>
+          <p class="font-text text-white">Follow instruction for more</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 my-4">
+            <div class="bg-system-2 py-3 px-4 rounded text-white">
+              <div class="font-title fs-6 mb-3 fw-lighter">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              </div>
+              <div class="d-flex">
+                <div class="d-flex w-75 align-items-center gap-3">
+                  <img
+                    src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/review-1.jpg"
+                    alt=""
+                    class="rounded-circle border border-warning"
+                    style="width: 80px; height: 80px"
+                  />
+                  <div class="font-title">
+                    <p class="fs-3 text-warning m-0">Jonh Doe</p>
+                    <p class="fs-5 m-0">Developer</p>
+                  </div>
+                </div>
+                <div class="w-25 d-flex justify-content-end align-items-center">
+                  <p class="fs-1 m-0">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 my-4">
+            <div class="bg-system-2 py-3 px-4 rounded text-white">
+              <div class="font-title fs-6 mb-3 fw-lighter">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              </div>
+              <div class="d-flex">
+                <div class="d-flex w-75 align-items-center gap-3">
+                  <img
+                    src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/review-1.jpg"
+                    alt=""
+                    class="rounded-circle border border-warning"
+                    style="width: 80px; height: 80px"
+                  />
+                  <div class="font-title">
+                    <p class="fs-3 text-warning m-0">Jonh Doe</p>
+                    <p class="fs-5 m-0">Developer</p>
+                  </div>
+                </div>
+                <div class="w-25 d-flex justify-content-end align-items-center">
+                  <p class="fs-1 m-0">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 my-4">
+            <div class="bg-system-2 py-3 px-4 rounded text-white">
+              <div class="font-title fs-6 mb-3 fw-lighter">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              </div>
+              <div class="d-flex">
+                <div class="d-flex w-75 align-items-center gap-3">
+                  <img
+                    src="https://plant-landing-page-tailwind-css.netlify.app/assets/img/review-1.jpg"
+                    alt=""
+                    class="rounded-circle border border-warning"
+                    style="width: 80px; height: 80px"
+                  />
+                  <div class="font-title">
+                    <p class="fs-3 text-warning m-0">Jonh Doe</p>
+                    <p class="fs-5 m-0">Developer</p>
+                  </div>
+                </div>
+                <div class="w-25 d-flex justify-content-end align-items-center">
+                  <p class="fs-1 m-0">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- subcribe & footer  -->
+
+    <div class="bg-milk">
+      <div class="container py-5">
+        <div
+          class="px-5 py-4 bg-system-2 w-50 m-auto rounded text-white position-relative z-3"
+          style="top: -110px"
+        >
+          <h3 class="font-text">
+            <span class="text-warning">Subscribe</span> to our newsletter
+          </h3>
+          <div class="input-group input-group-sm">
+            <input type="text" class="form-control" />
+            <button
+              class="btn btn-warning btn-sm input-group-text text-success font-title"
+            >
+              Subscribe <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+        <div class="position-relative">
+          <hr />
+          <div
+            class="position-absolute start-50 bg-milk group-icon p-3 d-flex gap-2 text-warning fs-5"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="text-center w-50 text-success">
+              <h1><i class="fa-solid fa-seedling"></i></h1>
+              <h3 class="font-title">IndorePlants.</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <h4 class="font-text fw-bold">Quick Link</h4>
+            <ul class="list-unstyled ">
+              <li class="my-1">
+                <a href="#" class="text-decoration-none text-success fw-semibold"
+                  >Home</a
+                >
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-decoration-none text-success fw-semibold"
+                  >About</a
+                >
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-decoration-none text-success fw-semibold"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <h4 class="font-text fw-bold">Quick Link</h4>
+            <ul class="list-unstyled ">
+              <li class="my-1">
+                <a href="#" class="text-decoration-none text-success fw-semibold"
+                  >Home</a
+                >
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-decoration-none text-success fw-semibold"
+                  >About</a
+                >
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-decoration-none text-success fw-semibold"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <h4 class="font-text fw-bold">Quick Link</h4>
+            <ul class="list-unstyled ">
+              <li class="my-1">
+                <a href="#" class="text-decoration-none text-success fw-semibold"
+                  >Home</a
+                >
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-decoration-none text-success fw-semibold"
+                  >About</a
+                >
+              </li>
+              <li class="my-1">
+                <a href="#" class="text-decoration-none text-success fw-semibold"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center text-white mt-5 ">
+          <p class="font-text text-black">
+            &copy; 2023 IndorePlants. All rights reserved.
+          </p>
+          <p class="font-text text-black">Designed by Your Name</p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
